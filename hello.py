@@ -1,6 +1,6 @@
-var1 = 500
-var2 = 12.34
-var3 = "Hello Sanju"
+import requests
 
-print (var3)
-print(var3[0:])
+response = requests.get('http://www.google.com')
+print(response.status_code)
+
+print(response.json)
